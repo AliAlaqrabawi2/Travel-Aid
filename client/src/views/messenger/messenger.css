@@ -1,0 +1,73 @@
+.messenger{
+    height: calc(100vh - 70px); 
+    display: flex ;
+}
+
+.chatMenu{
+    flex:1.4;  
+}
+.chatBox{
+    flex:5.5
+} 
+.chatProfile{
+    flex:3;
+}
+.chatMenuWrapper{
+    max-height: calc(100% - 100px);
+    overflow-y: scroll;
+
+}
+.chatMenuWrapper , .chatBoxWrapper{
+    padding:10px;
+
+}
+.chatMenuWrapper .srchFrindes{
+    padding:  10px ;
+    width:60% ;
+    border:none ; 
+    outline:none; 
+    border-bottom: 1px solid #888;
+}
+.chatBoxWrapper{ 
+display: flex;
+flex-direction: column;
+    
+} 
+.chatBoxTop{
+   height: 72vh;
+    overflow-y:scroll ;
+    
+}
+
+.chatBoxBottom{
+    display: flex;
+    margin-top:20px;
+    align-items: center;
+    justify-content: space-around; 
+}
+.chatBoxBottom .chatMessageInput{
+    width:80%; 
+    height:50px; 
+    resize: none; 
+    outline: none;
+    border-radius: 2px;
+}
+.chatMessageButton{
+    padding:10px;
+    cursor: pointer;
+    background-color: teal;
+    border:none; 
+    outline: none; 
+    color:#fff;
+    border-radius: 4px;
+
+}
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+  }
